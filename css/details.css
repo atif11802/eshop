@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    
+    padding: 15px;
+}
+.nav .logo{
+    margin-left: 20px;
+}
+.nav nav{
+    flex: 1;
+    text-align: right;
+}
+.nav nav ul{
+    list-style-type: none;
+    margin-right: 30px;
+}
+.nav nav ul li{
+    display: inline-block;
+    padding:10px;
+}
+.nav nav ul li a{
+    color:#555;
+    text-decoration: none;
+}
+/*-------products details----------------*/
+.small-container{
+    margin: 30px 100px;
+
+}
+
+
+.small-container .row{
+    display: flex;
+}
+
+.small-container .row .col-2{
+    color:#555;
+    font-size:20px;
+    padding: 10px;
+}
+.small-container .row .col-2 h1{
+    color:black;
+    font-size: 40px;
+    padding:10px 0;
+}
+
+.small-container .row img{
+    width:350px;
+    
+}
+
+
+    
+   
+
+.small-container .row .col-2 a{
+    color:#555;
+    text-decoration: none;
+}
+
+.small-container .row .col-2 h3{
+    margin-top:10px;
+}
+
+
+.small-container .row h4{
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight:bold;
+}
+ 
+.small-container .row select{
+    display: block;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:1px solid #ff523b;
+}
+
+.small-container .row input{
+    width:50px;
+    height:40px;
+    padding-left: 10px;
+    font-size:20px;
+    margin-right: 10px;
+    border:1px solid #ff523b;
+
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.small-img-col{
+ 
+    cursor: pointer;
+}
+
+.small-container .row  .small-img-col img{
+    margin: 10px 0;
+    width:70px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------products----------------*/
+.cat-container {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.cat-container .heading{
+    display: flex;
+    margin: 0 120px ;
+    align-items: center;
+
+}
+.cat-container .heading .row2{
+flex: 1;
+text-align: right;
+}
+
+
+
+.cat-container .row-cat{
+    
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.cat-container img{
+
+    width:250px;
+   margin: 10px;
+    
+}
+.cat-container .row3 a{
+    text-decoration:none;
+    color:#555;
+}
+
+
+
+.cat-container .row3, .fas{
+    text-align: center;
+    color:#555;
+}
+.cat-container .row3{
+    transition: transform 0.9s;
+}
+.cat-container .row3:hover{
+    transform: translateY(-10px);
+}
+.fas,.far{
+    
+    color:orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------footer---------------*/
+.footrow .row1 img{
+    width:120px;
+   
+}
+.footrow .row2{
+    color: white;
+}
+.footrow .row2 img{
+    width:150px;
+    
+}
+.footrow{
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+.footer{
+    background-color:black;
+   
+}
+.footrow .row1{
+    margin: 0 30px;
+    text-align: center;
+    color: white;
+
+}
+.footrow .row1 ul{
+    list-style:none;
+}
+.footer-container{
+    padding:30px 0;
+}
+.footer-container hr{
+    
+    width:50%;
+    margin: auto;
+    
+}
+.footer-container h3{
+    color:#555;
+    text-align:center;
+    margin-top:10px;
+}
+
+
+.menu-icon{
+    width:28px;
+    margin-left: 20px ;
+
+    display: none;
+}
+
+@media all and (max-width:800px){
+
+
+
+    
+    .nav nav ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background:#333;
+        width:100%;
+        overflow:scroll;
+        transition: max-Height 0.5s;
+    }
+    .nav nav ul li{
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+
+    .nav nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .small-container {
+        margin: 30px ;
+    
+    }
+    .small-container .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-container .row img{
+        width:280px;
+    }
+
+    .cat-container .heading{
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+    
+    }
+ 
+
+    .cat-container .row-cat{
+    
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footrow{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom:15px;
+        text-align: center;
+    }
+
+    .footrow .row1{
+        margin:10px 0;
+    }
+    .footrow .row2{
+        margin:10px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
